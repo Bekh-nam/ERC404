@@ -1,0 +1,15 @@
+{
+  "name": "erc404",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "console": "hardhat console",
+    "production:deploy": "yarn mainnet:deploy && yarn matic:deploy && yarn bsc:deploy && yarn avalanche:deploy",
+    "zksync-testnet:deploy": "hardhat deploy-zksync --network zkTestnet",
+    "zksync-mainnet:deploy": "hardhat deploy-zksync --network zkMainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^2.0.0",
+    "hardhat": "^2.20.1"
+  }
+}
